@@ -38,9 +38,9 @@ const ViewProductsDetailsHook = (prodID) => {
     let images = []
     if (item.images)
         images = item.images.map((img) => { return { original: img } })
-    else {
-        images = [{ original: `${mobile}` }]
-    }
+    // else {
+    //     images = [{ original: `${mobile}` }]
+    // }
 
 
     //to show category item

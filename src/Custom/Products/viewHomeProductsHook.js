@@ -5,6 +5,7 @@ import { getAllProducts } from '../../redux/actions/productsAction';
 const ViewHomeProductsHook = () => {
 
     const dispatch = useDispatch();
+    
     useEffect(() => {
         dispatch(getAllProducts())
     }, [])

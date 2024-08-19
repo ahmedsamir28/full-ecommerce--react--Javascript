@@ -20,12 +20,14 @@ const ViewAllProductsCategoryHook = (catID) => {
     const allProducts = useSelector((state) => state.allProducts.allProductCat)
 
     let items = []; let pagination = [];
+
     try {
         if (allProducts.data)
             items = allProducts.data;
         else
             items = []
     } catch (e) { }
+    
     try {
         if (allProducts.paginationResult)
             pagination = allProducts.paginationResult.numberOfPages;

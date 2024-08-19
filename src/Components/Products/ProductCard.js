@@ -4,7 +4,7 @@ import ProductCardHook from '../../Custom/Products/ProductCardHook';
 import { ToastContainer } from 'react-toastify';
 
 const ProductCard = ({ item, favProd }) => {
-    const [removeToWishListData, addToWishListData, handelFav, favImg] = ProductCardHook(item, favProd)
+    const [, , handelFav, favImg] = ProductCardHook(item, favProd)
 
     return (
         <div className='container '>

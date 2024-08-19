@@ -19,15 +19,15 @@ const CardContainerHook = () => {
     }, [])
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if (loading === false) {
-            if (res.data.length >= 1) {
-                setFavProd(res.data.map(item => item._id))
-            } else setFavProd([])
-        }
+    //     if (loading === false) {
+    //         if (res.data.length >= 1) {
+    //             setFavProd(res.data.map(item => item._id))
+    //         } else setFavProd([])
+    //     }
 
-    }, [loading])
+    // }, [loading])
 
     return [favProd]
 }

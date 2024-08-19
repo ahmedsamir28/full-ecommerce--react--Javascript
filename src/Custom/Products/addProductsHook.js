@@ -99,6 +99,7 @@ const AdminAddProductsHook = () => {
         }
         setCatID(e.target.value)
     }
+    
     useEffect(() => {
         if (CatID !== 0) {
             if (subCat.data) {
